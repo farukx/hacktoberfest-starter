@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html,
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+figure.brand-images>img {
+  max-height: 60px;
+}
+
+article.content {
+  padding: 0 10%;
+}
+
+img#easter-egg-img {
+  cursor: help;
+}
