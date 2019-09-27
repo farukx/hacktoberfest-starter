@@ -1,6 +1,6 @@
 const $confettiButton = document.querySelector('#confetti-button')
-const $hacktoberfestTitle = document.querySelector('#hacktoberfest-title');
-const $easterEggImg = document.querySelector('#easter-egg-img')
+const $hacktoberfestTitle = document.querySelector('#hacktoberfest-title')
+const headerTitle = $hacktoberfestTitle.innerHTML
 let wannaParty = false
 
 $confettiButton.addEventListener('click', () => {
@@ -12,10 +12,6 @@ $confettiButton.addEventListener('click', () => {
     }
 })
 
-$easterEggImg.addEventListener('click', () => {
-    console.log('Happy Hacking! 🎉');
-})
-
 const startParty = () => {
     confetti.start()
     $confettiButton.innerHTML = 'Detén el confetti 😅'
@@ -25,5 +21,5 @@ const startParty = () => {
 const stopParty = () => {
     confetti.stop()
     $confettiButton.innerHTML = '¡Activa la fiesta! 🎉'
-    $hacktoberfestTitle.innerHTML = 'Hacktoberfest Starter'
+    $hacktoberfestTitle.innerHTML = headerTitle
 }
